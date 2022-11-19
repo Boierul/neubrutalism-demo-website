@@ -1,0 +1,9 @@
+.app {
+  height: 100vh;
+  background: #ffdcaa;
+}
+
+@font-face {
+  font-family: 'Mabry Pro';
+  src: local('Mabry'), url('fonts/Mabry-Pro-Medium.ttf') format('truetype');
+}
