@@ -1,6 +1,7 @@
 import './App.css';
 import ReactFullpage from "@fullpage/react-fullpage";
 import Home from "./components/home/Home";
+import MiddleContainer from "./components/middlecontainer/MiddleContainer";
 import ReactDOM from 'react-dom';
 import Container from "./components/container/Container";
 
@@ -15,6 +16,9 @@ function App() {
                     <ReactFullpage.Wrapper>
                         <div className="section">
                             <Home handleClick={() => fullpageApi.moveSectionDown()}/>
+                        </div>
+                        <div className="section">
+                            <MiddleContainer />
                         </div>
                         <div className="section">
                             <Container/>
