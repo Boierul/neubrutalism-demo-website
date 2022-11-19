@@ -14,14 +14,14 @@
 }
 /* Customize the scroll points indicators */
 #fp-nav ul li a span {
-    background: #e29dfc !important;
+    background: #e7befa !important;
 }
 
 #fp-nav ul li a.active span {
-    background: #d579f8 !important;
+    background: #e148be!important;
 }
 
 #fp-nav ul li a.active span:hover {
-    background: #e148be !important;
+    background: #f63ecd !important;
 }
 

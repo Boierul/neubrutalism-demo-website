@@ -1,26 +1,33 @@
 import React from 'react';
 import './Container.css'
+import closeButton from '../../assets/close_button.png'
+import minimizeButton from '../../assets/minimize_button.png'
 
 function Container() {
     return (
         <>
-            <div className="neubrutalism-main-container">
-                <div className="neubrutalism-main-card">
-                    <b>CONTAINER 1</b>
-                </div>
-                <div className="neubrutalism-main-card-2">
-                    CONTAINER 2
-                </div>
+            <div className="neubrutalism-container">
                 <div className="neubrutalism-main-card-3">
-                    <b>CONTAINER 3</b>
+                    <div className="neubrutalism-form-container-nav">
+                        <h2>FORM CONTAINER</h2>
+                        <br/>
+                        <div>
+                            <img className={"neubrutalism-functional-icons"} src={minimizeButton} alt={"minimize-button"}/>
+                            <img className={"neubrutalism-functional-icons"} src={closeButton} alt={"close-button"}/>
+                        </div>
+                    </div>
+
+                    <div className="neubrutalism-form">
+
+                    </div>
                 </div>
-            </div>
-            <div className="neubrutalism-hero-container">
-                <div className="neubrutalism-hero-container-header">
-                    <h1>Explore Neubrutalism</h1>
+
+                <div className="neubrutalism-main-card">
+                    <b>Select category</b>
                 </div>
-                <div className="neubrutalism-hero-container-body">
-                    <h3>A new style that's taking over the creative industry</h3>
+
+                <div className="neubrutalism-main-card-2">
+                    Your profile
                 </div>
             </div>
         </>
