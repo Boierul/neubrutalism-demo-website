@@ -19,10 +19,11 @@
 
 .home-hero-container-body {
     color: #ffffff;
-    padding-top: 1rem;
+    padding-top: 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 1rem;
 }
 
@@ -66,4 +67,50 @@
 .home-hero-container-body-header:hover {
     transition: 0.4s ease-in-out;
     box-shadow: 3px 3px 0 0 black;
+}
+
+.hero-art-gallery {
+
+}
+
+.art {
+    border: 1rem solid black;
+}
+
+.art:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+    animation: ease-in-out 1000ms;
+}
+
+.art_2 {
+    position:relative;
+    right: 2rem;
+    top: 2rem;
+}
+
+.art_3 {
+    position:relative;
+    right: 4rem;
+    top: 4rem;
+}
+
+
+/* Custom Grow Animation */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 3px 3px 0 0 #ffffff;
+
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
 }
