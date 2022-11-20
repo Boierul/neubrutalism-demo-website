@@ -6,3 +6,58 @@
     background-size: cover;
 }
 
+.marquee-w {
+    position: relative;
+    display: block;
+    height: 140px;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    color: #ffffff;
+    font-family: 'Mabry Pro';
+    text-align: center;
+    -webkit-text-stroke: 1px #4b2ecb;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 140px;
+    font-size: 85px;
+    animation: marquee 29s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)  infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}

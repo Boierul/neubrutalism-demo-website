@@ -26,9 +26,11 @@
     box-shadow: 0 5px 0 0;
 }
 
-.neubrutalism-main-card-2 {
-    margin: 1rem;
-    width: 10rem;
+
+.neubrutalism-form-button {
+    margin-top: 4rem;
+    width: 75%;
+    align-items: center;
     height: 1.9rem;
     border: 3px solid black;
     background: #ffffff;
@@ -36,16 +38,75 @@
     padding: 5px;
     transition: 0.4s ease-in-out;
     border-radius: 5px;
+    text-transform: uppercase;
 }
 
-.neubrutalism-main-card-2:hover {
-    background: #77b2ff;
+.neubrutalism-form-button:hover {
+    background: #bd1395;
+    scale: 1.05;
+    color: white;
     cursor: pointer;
     transition: 0.4s ease-in-out;
-    box-shadow: 3px 3px 0 0;
+    box-shadow: 3px 3px 0 0 black;
 }
 
-.neubrutalism-main-card-3, .neubrutalism-form {
+.form-first-child {
+    margin-top: 4rem;
+}
+
+.neubrutalism-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    padding: 0.8rem 5rem;
+}
+
+.neubrutalism-form input {
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0.5rem 0.5rem;
+    transition: 0.4s ease-in-out;
+    border: 3px solid black;
+    border-radius: 3px;
+    outline: none;
+    color: #4e3df9;
+    font-size: 1em;
+    font-family: "Mabry Pro", sans-serif;
+    transition: 0.4s ease-in-out;
+}
+
+.neubrutalism-form span {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    font-family: "Mabry Pro", sans-serif;
+    color: #4b2ecb;
+    transition: 0.4s ease-in-out;
+}
+
+.neubrutalism-form input:valid,
+.neubrutalism-form input:focus
+{
+    border: 3px solid black;
+    box-shadow: 0.2rem 0.2rem 0 0;
+    color: #e148be;
+}
+
+.neubrutalism-form input:valid ~ span,
+.neubrutalism-form input:focus ~ span
+{
+    transform: translateX(10px) translateY(-1.5rem);
+    font-size: 0.85em;
+    padding: 0.1rem 1rem;
+    background: black;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.neubrutalism-main-card-3  {
     margin: 1rem;
     border: 3px solid black;
     background: white;
@@ -55,9 +116,9 @@
     border-radius: 5px;
 }
 
-.neubrutalism-main-card-3:hover, .neubrutalism-form:hover {
+.neubrutalism-main-card-3:hover {
     transition: 0.4s ease-in-out;
-    box-shadow: 3px 3px 0 0;
+    box-shadow: 1rem 1rem 0 0;
 }
 
 .neubrutalism-form-container-nav {
